@@ -14,7 +14,7 @@ app<span class="token punctuation">.</span><span class="token function">use</spa
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// App - common component</span>
 </code></pre></div><h3 id="\u043F\u0440\u0438\u043C\u0435\u0440-\u0438\u0441\u043F\u043En\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F" tabindex="-1">\u041F\u0440\u0438\u043C\u0435\u0440 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F <a class="header-anchor" href="#\u043F\u0440\u0438\u043C\u0435\u0440-\u0438\u0441\u043F\u043En\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F" aria-hidden="true">#</a></h3><div class="language-vue"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name"><span class="token namespace">v-touch:</span>tap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onTap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Test Event<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name"><span class="token namespace">v-touch:</span><span class="token namespace">tap:</span>10</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onTap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Test Event<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ts<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
@@ -54,6 +54,7 @@ app<span class="token punctuation">.</span><span class="token function">use</spa
         hold<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>
         timeout<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>
         debounce<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>
+        drag<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span> <span class="token comment">// min distance in px</span>
         swipe<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span>
     <span class="token punctuation">}</span> <span class="token comment">// in ms</span>
 <span class="token punctuation">}</span>
@@ -71,4 +72,4 @@ app<span class="token punctuation">.</span><span class="token function">use</spa
     drag: &quot;v-touch-drag&quot;,
     release: &quot;v-touch-release&quot;,
     
-</code></pre></div>`,24),e=[p];function c(l,u,i,r,k,d){return a(),s("div",null,e)}var v=n(o,[["render",c]]);export{g as __pageData,v as default};
+</code></pre></div>`,24),e=[p];function c(l,u,i,r,k,d){return a(),s("div",null,e)}var m=n(o,[["render",c]]);export{g as __pageData,m as default};
